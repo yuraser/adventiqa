@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+
+
+<link rel="stylesheet" href="assets/css/main.css"></head>
+
+<body>
+
+<nav class="menu">
+    <div class="logo">
+        <img class="menu_logo" src="assets/images/logo.png" alt="">
+    </div>
+    <div class="links">
+        <a class="menu_link menu_link_active" href="">Home</a>
+        <a class="menu_link" href="">Stories</a>
+        <a class="menu_link" href="">Deals</a>
+        <a class="menu_link" href="">Digest</a>
+        <a class="menu_link" href="">Pricing</a>
+        <a class="menu_link" href="">About</a>
+    </div>
+    <div class="right_menu">
+        <button class="menu_auth_btn help_btn">Help</button>
+        <button class="menu_auth_btn">Sign Up</button>
+        <button class="menu_auth_btn login_btn">Login</button>
+    </div>
+</nav>
+
+
+
+<section class="section banner_section">
+        <div class="banner_background_img">
+            <img src="assets/images/linebg.svg" alt="">
+        </div>
+    <div class="baner">
+        <div class="content_main col-md-8">
+
+            <div class="text_main">
+                <h1>The Ultimate Trip Planner</h1>
+                <h4>Plan&Book your dream trip</h4>
+            </div>
+
+            <div class="search_main">
+                <form class="search_main_form" action="">
+                    <div class="search_main_inpusts">
+                        <div class="search_main_from_where">
+                            <input class="search_main_input search_main_from_where_input" placeholder="From" type="text">
+                            <input class="switch_from_where_inputs" type="button">
+                            <input class="search_main_input search_main_from_where_input" placeholder="Where" type="text">
+                        </div>
+
+                        <input class="search_main_input search_main_form_date" type="date">
+                        <input class="search_main_input search_main_form_date" type="date">
+                        <select class="search_main_input" name="" id="">
+                            <option value="1">1</option>
+                        </select>
+
+                    <button class="submit_search_main_build_trip_btn" type="submit"> <img src="assets/images/search.png" alt=""> Build Trip</button>
+                    
+                    </div>
+                    
+                    <div class="search_main_details">
+                        <button class="add_destination_btn">+ Add Destination</button>
+                        <label class="search_main_label_budget" for="budget">Budget</label>
+                        <select class="search_main_curency" name="cyrency" id="">
+                            <option value="1">US $</option>
+                            <option value="2">EUR €</option>
+                        </select>
+                            <!-- 
+                                React decition:
+                                https://www.npmjs.com/package/react-input-range 
+                            -->
+                            <div class="min_max_rangeslider">
+                                <input class="min min_range" name="range_1" type="range" min="1" max="100" value="10" />
+                                <input class="max" name="range_1" type="range" min="1" max="100" value="90" />
+                                <span class="range_min light left">500 </span>
+                                <span class="range_max light right">4000 </span>
+                            </div>
+                    </div>
+
+
+                </form>
+            </div>
+
+            <div class="buttons_main">
+                <button class="buttons_main_btn buttons_main_btn_active">
+                    <img src="assets/images/icons/ic.png" alt="">
+                    All
+                </button>
+                <button  class="buttons_main_btn">
+                    <img src="assets/images/icons/ic1.png" alt="">
+                    Family
+                </button>
+                <button  class="buttons_main_btn">
+                    <img src="assets/images/icons/ic2.png" alt="">
+                    Adventure
+                </button>
+                <button  class="buttons_main_btn">
+                    <img src="assets/images/icons/ic3.png" alt="">
+                    Sport
+                </button>
+                <button  class="buttons_main_btn">
+                    <img src="assets/images/icons/ic4.png" alt="">
+                    Luxury
+                </button>
+                <button  class="buttons_main_btn">
+                    <img src="assets/images/icons/ic5.png" alt="">
+                    Art
+                </button>
+            </div>
+
+        </div>
+        
+        <div class="img_main">
+            <img src="assets/images/img main.png" alt="">
+        </div>
+
+    </div>
+    
+</section>
+
+
+
+<section class="section steps_section">
+    <h2 class="section_header">How <span>Adventiqa Works</span></h2>
+
+    <div class="steps_cards col-md-7">
+        <div class="steps_card">
+            <img src="assets/images/steps/start.png" alt="">
+            <span>Start Planning</span>
+        </div>
+        <div class="steps_card">
+            <img src="assets/images/steps/plan.png" alt="">
+            <span>Start Planning</span>
+        </div>
+        <div class="steps_card">
+            <img src="assets/images/steps/find.png" alt="">
+            <span>Start Planning</span>
+        </div>
+        <div class="steps_card">
+            <img src="assets/images/steps/review.png" alt="">
+            <span>Start Planning</span>
+        </div>
+        <div class="steps_card">
+            <img src="assets/images/steps/tripping.png" alt="">
+            <span>Start Planning</span>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="section benefits_planner_section">
+    <h2 class="section_header">Trip  <span>Planner Benefits</span></h2>
+
+    <div class="benefits_cards col-md-8">
+        <div class="benefits_card">
+            <img class="benefits_card_img" src="assets/images/benefits/img.png" alt="">
+            <div class="benefits_card_text">
+                <h4>Research Bot That Works <br> for You</h4>
+            
+                <p>Matches your travel preferences with <br> over 230,000,000 data points:</p>
+                <ul>
+                    <li> <img src="assets/images/benefits/check.png" alt=""> Best places & time to visit</li>
+                    <li> <img src="assets/images/benefits/check.png" alt=""> Reviews</li>
+                    <li> <img src="assets/images/benefits/check.png" alt=""> Transportation options</li>
+                    <li> <img src="assets/images/benefits/check.png" alt=""> Hidden gems</li>
+                </ul>
+            </div>
+        </div>
+        <div class="benefits_card benefits_card_reverse">
+            <img class="benefits_card_img" src="assets/images/benefits/img1.png" alt="">
+            <div class="benefits_card_text">
+                <h4>Planning Engine That <br>
+                    Helps You See & Do More</h4>
+       
+                <p>Optimizes your itinerary:</p>
+                <ul>
+                    <li> <img src="assets/images/benefits/check.png" alt=""> Minimizes travel time</li>
+                    <li> <img src="assets/images/benefits/check.png" alt=""> Checks when attractions are open</li>
+                    <li> <img src="assets/images/benefits/check.png" alt=""> Recommends how much time to spend</li>
+                </ul>
+            </div>
+        </div>
+        <div class="benefits_card">
+            <img class="benefits_card_img" src="assets/images/benefits/img2.png" alt="">
+            <div class="benefits_card_text">
+                <h4>Your Complete Plan in <br>
+                    One Place</h4>
+                
+                <ul>
+                    <li> <img src="assets/images/benefits/check.png" alt=""> Share and collaborate with co-travelers</li>
+                    <li> <img src="assets/images/benefits/check.png" alt=""> Say Hi to your new travel hub!</li>
+                </ul>
+                <button class="benefits_start_planning_btn">Start Planning</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+<section class="section top_section">
+
+</section>
+
+
+
+<section class="section popular_section">
+    <h2 class="section_header"> <span>Popular Stories </span>Our Travelers</h2>
+
+    <div class="glide col-md-8">
+        <div class="popular_section_track" data-glide-el="track">
+            <ul class="popular_section_slides">
+                <li class="popular_section_slide popular_card">
+                    <div class="popular_images">
+
+                        <img src="assets/images/popular_stories/bg1.png" alt="">
+
+                        <div class="smal_images">
+                            <div class="smal_image"><img src="assets/images/popular_stories/town.png" alt=""></div>
+                            <div class="smal_image"><img src="assets/images/popular_stories/mountains.png" alt=""></div>
+                            <div class="smal_image"><img src="assets/images/popular_stories/old_town.png" alt=""></div>
+                            <div class="smal_image"><img src="assets/images/popular_stories/selfie.png" alt=""></div>
+                        </div>
+                    </div>
+
+                    <div class="popular_content">
+                        <img class="popular_content_customer_img" src="assets/images/popular_stories/profile_img.png" alt="">
+                        <div class="popular_content_text">
+                            <h4 class="popular_content_head">Italy 7 day famile trip</h4>
+                            <span class="popular_content_cutomer_name">Dennis Asser 
+                                <span class="popular_content_cutomer_stars"> 
+                                    <img src="assets/images/popular_stories/stars.png" alt=""> 
+                                    3
+                                    <img src="assets/images/popular_stories/comment.png" alt=""> 
+                                    103
+                                </span>
+                            </span>
+                            <span class="popular_content_cutomer_budget">Budget 3500$</span>
+                        </div>
+                    </div>
+
+                    <div class="popular_buttons">
+                        <button class="main_popular_button">Buy</button>
+                        <button class="secondary_popular_button">Details</button>
+                    </div>
+                </li>
+                <li class="popular_section_slide popular_card">
+                    <div class="popular_images">
+
+                        <img src="assets/images/popular_stories/bg1.png" alt="">
+
+                        <div class="smal_images">
+                            <div class="smal_image"><img src="assets/images/popular_stories/town.png" alt=""></div>
+                            <div class="smal_image"><img src="assets/images/popular_stories/mountains.png" alt=""></div>
+                            <div class="smal_image"><img src="assets/images/popular_stories/old_town.png" alt=""></div>
+                            <div class="smal_image"><img src="assets/images/popular_stories/selfie.png" alt=""></div>
+                        </div>
+                    </div>
+
+                    <div class="popular_content">
+                        <img class="popular_content_customer_img" src="assets/images/popular_stories/profile_img.png" alt="">
+                        <div class="popular_content_text">
+                            <h4 class="popular_content_head">Italy 7 day famile trip</h4>
+                            <span class="popular_content_cutomer_name">Dennis Asser 
+                                <span class="popular_content_cutomer_stars"> 
+                                    <img src="assets/images/popular_stories/stars.png" alt=""> 
+                                    3
+                                    <img src="assets/images/popular_stories/comment.png" alt=""> 
+                                    103
+                                </span>
+                            </span>
+                            <span class="popular_content_cutomer_budget">Budget 3500$</span>
+                        </div>
+                    </div>
+                    
+                    <div class="popular_buttons">
+                        <button class="main_popular_button">Buy</button>
+                        <button class="secondary_popular_button">Details</button>
+                    </div>
+                </li>
+                <li class="popular_section_slide popular_card">
+                    <div class="popular_images">
+
+                        <img src="assets/images/popular_stories/bg1.png" alt="">
+
+                        <div class="smal_images">
+                            <div class="smal_image"><img src="assets/images/popular_stories/town.png" alt=""></div>
+                            <div class="smal_image"><img src="assets/images/popular_stories/mountains.png" alt=""></div>
+                            <div class="smal_image"><img src="assets/images/popular_stories/old_town.png" alt=""></div>
+                            <div class="smal_image"><img src="assets/images/popular_stories/selfie.png" alt=""></div>
+                        </div>
+                    </div>
+
+                    <div class="popular_content">
+                        <img class="popular_content_customer_img" src="assets/images/popular_stories/profile_img.png" alt="">
+                        <div class="popular_content_text">
+                            <h4 class="popular_content_head">Italy 7 day famile trip</h4>
+                            <span class="popular_content_cutomer_name">Dennis Asser 
+                                <span class="popular_content_cutomer_stars"> 
+                                    <img src="assets/images/popular_stories/stars.png" alt=""> 
+                                    3
+                                    <img src="assets/images/popular_stories/comment.png" alt=""> 
+                                    103
+                                </span>
+                            </span>
+                            <span class="popular_content_cutomer_budget">Budget 3500$</span>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="popular_buttons">
+                        <button class="main_popular_button">Buy</button>
+                        <button class="secondary_popular_button">Details</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="glide__arrows" data-glide-el="controls">
+            <button class="popular_slider_control_btn left_slider_control_btn" data-glide-dir="<"><img src="assets/images/popular_stories/arrow-point-to-right.png" alt=""></button>
+            <button class="popular_slider_control_btn right_slider_control_btn" data-glide-dir=">"><img src="assets/images/popular_stories/arrow-point-to-right.png" alt=""></button>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="section bundles_section">
+    <h2 class="section_header"><span>Popular Bandles </span>from Travel Agencies</h2>
+    <img class="bundles_section_background" src="assets//images/bundles_bg.png" alt="">
+    <div class="glide col-md-8">
+        <div class="popular_section_track" data-glide-el="track">
+            <ul class="popular_section_slides">
+                <li class="popular_section_slide popular_card">
+                    <div class="popular_images">
+
+                        <img src="assets/images/popular_stories/bg1.png" alt="">
+
+                        <div class="smal_images">
+                            <div class="smal_image"><img src="assets/images/popular_stories/town.png" alt=""></div>
+                            <div class="smal_image"><img src="assets/images/popular_stories/mountains.png" alt=""></div>
+                            <div class="smal_image"><img src="assets/images/popular_stories/old_town.png" alt=""></div>
+                            <div class="smal_image"><img src="assets/images/popular_stories/selfie.png" alt=""></div>
+                        </div>
+                    </div>
+
+                    <div class="popular_content">
+                        <img class="popular_content_customer_img" src="assets/images/popular_stories/profile_img.png" alt="">
+                        <div class="popular_content_text">
+                            <h4 class="popular_content_head">Italy 7 day famile trip</h4>
+                            <span class="popular_content_cutomer_name">Dennis Asser 
+                                <span class="popular_content_cutomer_stars"> 
+                                    <img src="assets/images/popular_stories/stars.png" alt=""> 
+                                    3
+                                    <img src="assets/images/popular_stories/comment.png" alt=""> 
+                                    103
+                                </span>
+                            </span>
+                            <span class="popular_content_cutomer_budget">Budget 3500$</span>
+                        </div>
+                    </div>
+
+                    <div class="popular_buttons">
+                        <button class="main_popular_button">Buy</button>
+                        <button class="secondary_popular_button">Details</button>
+                    </div>
+                </li>
+                <li class="popular_section_slide popular_card">
+                    <div class="popular_images">
+
+                        <img src="assets/images/popular_stories/bg1.png" alt="">
+
+                        <div class="smal_images">
+                            <div class="smal_image"><img src="assets/images/popular_stories/town.png" alt=""></div>
+                            <div class="smal_image"><img src="assets/images/popular_stories/mountains.png" alt=""></div>
+                            <div class="smal_image"><img src="assets/images/popular_stories/old_town.png" alt=""></div>
+                            <div class="smal_image"><img src="assets/images/popular_stories/selfie.png" alt=""></div>
+                        </div>
+                    </div>
+
+                    <div class="popular_content">
+                        <img class="popular_content_customer_img" src="assets/images/popular_stories/profile_img.png" alt="">
+                        <div class="popular_content_text">
+                            <h4 class="popular_content_head">Italy 7 day famile trip</h4>
+                            <span class="popular_content_cutomer_name">Dennis Asser 
+                                <span class="popular_content_cutomer_stars"> 
+                                    <img src="assets/images/popular_stories/stars.png" alt=""> 
+                                    3
+                                    <img src="assets/images/popular_stories/comment.png" alt=""> 
+                                    103
+                                </span>
+                            </span>
+                            <span class="popular_content_cutomer_budget">Budget 3500$</span>
+                        </div>
+                    </div>
+                    
+                    <div class="popular_buttons">
+                        <button class="main_popular_button">Buy</button>
+                        <button class="secondary_popular_button">Details</button>
+                    </div>
+                </li>
+                <li class="popular_section_slide popular_card">
+                    <div class="popular_images">
+
+                        <img src="assets/images/popular_stories/bg1.png" alt="">
+
+                        <div class="smal_images">
+                            <div class="smal_image"><img src="assets/images/popular_stories/town.png" alt=""></div>
+                            <div class="smal_image"><img src="assets/images/popular_stories/mountains.png" alt=""></div>
+                            <div class="smal_image"><img src="assets/images/popular_stories/old_town.png" alt=""></div>
+                            <div class="smal_image"><img src="assets/images/popular_stories/selfie.png" alt=""></div>
+                        </div>
+                    </div>
+
+                    <div class="popular_content">
+                        <img class="popular_content_customer_img" src="assets/images/popular_stories/profile_img.png" alt="">
+                        <div class="popular_content_text">
+                            <h4 class="popular_content_head">Italy 7 day famile trip</h4>
+                            <span class="popular_content_cutomer_name">Dennis Asser 
+                                <span class="popular_content_cutomer_stars"> 
+                                    <img src="assets/images/popular_stories/stars.png" alt=""> 
+                                    3
+                                    <img src="assets/images/popular_stories/comment.png" alt=""> 
+                                    103
+                                </span>
+                            </span>
+                            <span class="popular_content_cutomer_budget">Budget 3500$</span>
+                        </div>
+                    </div>
+                    
+                    <div class="popular_buttons">
+                        <button class="main_popular_button">Buy</button>
+                        <button class="secondary_popular_button">Details</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="glide__arrows" data-glide-el="controls">
+            <button class="popular_slider_control_btn left_slider_control_btn" data-glide-dir="<"><img src="assets/images/popular_stories/arrow-point-to-right.png" alt=""></button>
+            <button class="popular_slider_control_btn right_slider_control_btn" data-glide-dir=">"><img src="assets/images/popular_stories/arrow-point-to-right.png" alt=""></button>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="section partners_section">
+    <h2 class="section_header"> <span> Adventiqa</span> Partners</h2>
+    <div class="partners_div col-md-8">
+        <div class="partner">
+            <img src="assets/images/partners/1.png" alt="">
+        </div>
+        <div class="partner">
+            <img src="assets/images/partners/2.png" alt="">
+        </div>
+        <div class="partner">
+            <img src="assets/images/partners/3.png" alt="">
+        </div>
+        <div class="partner">
+            <img src="assets/images/partners/4.png" alt="">
+        </div>
+        <div class="partner">
+            <img src="assets/images/partners/5.png" alt="">
+        </div>
+        <div class="partner">
+            <img src="assets/images/partners/6.png" alt="">
+        </div>
+        <div class="partner">
+            <img src="assets/images/partners/7.png" alt="">
+        </div>
+        <div class="partner">
+            <img src="assets/images/partners/8.png" alt="">
+        </div>
+        <div class="partner">
+            <img src="assets/images/partners/9.png" alt="">
+        </div>
+        <div class="partner">
+            <img src="assets/images/partners/10.png" alt="">
+        </div>
+        <div class="partner">
+            <img src="assets/images/partners/11.png" alt="">
+        </div>
+    </div>
+</section>
+
+
+
+<footer class="footer">
+    <div class="top_footer col-md-8">
+        <div class="logo_section">
+            <div class="logo_footer">
+                <img class="footer_logo" src="assets/images/logo.png" alt="">
+            </div>
+            <div class="right_footer">
+                <p>2019 © Adventiqa. All right reserved</p>
+            </div>
+            <div class="footer_social">
+                <img src="assets/images/footer/icons8-facebook-logo.svg" alt="">
+                <img src="assets/images/footer/icons8-twitter-circled.svg" alt="">
+            </div>
+        </div>
+        <div class="menu_section">
+            <div class="footer_menu_section_left">
+                <h3>Site map</h3>
+                <a href="">About us</a>
+                <a href="">Plan trip</a>
+                <a href="">Stories</a>
+                <a href="">Bundles</a>
+                <a href="">Help</a>
+            </div>
+            <div class="footer_menu_section_right">
+                <a href="">Top 10 stories</a>
+                <a href="">Top 10 blundles</a>
+            </div>
+        </div>
+        <div class="buttons_section">
+            <form class="sign_up">
+                <h3>Sign up fo the newsletter</h3>
+                <div class="sign_up_inputs">
+                    <input class="sign_up_input" placeholder="E-mail" type="text">
+                    <button class="sign_up_btn" type="submit">GO</button>                    
+                </div>
+            </form>
+            
+            <div class="downloads_buttons">
+                <button class="market_btn gogglePlay_btn" ></button>
+                <button class="market_btn appStore_btn" ></button>
+            </div>  
+
+            <div class="qr_codes_buttons">
+                <button class="qr_code first_qr_code"></button>
+                <button class="qr_code second_qr_code"></button>
+            </div>     
+        </div>
+    </div>
+    <div class="copiryting">
+        <div class="left_copiriting">
+            <div class="privacy_copiriting">Privacy Policy</div>
+            <div class="vl_copiriting"></div>
+            <div class="privacy_copiriting">Term and conditions</div>
+        </div>
+        <div class="right_copiriting">
+            <div class="need_a_help_copiriting">Need a Help? Contact Us</div>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+<script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+<script type="javascrypt" src="assets/js/main.js"></script>
+
+</html>
