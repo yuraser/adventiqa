@@ -545,10 +545,17 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-image: url(../images/bg_edit_done.png);
-    background-position: center;
-    background-repeat: no-repeat;
+    position: relative;
     padding-block-start: 130px;
+}
+
+.benefits_planner_section_background {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    object-fit: none;
+    top: 0px;
 }
 
 .benefits_card {
@@ -881,6 +888,7 @@ body {
     align-items: center;
     position: relative;    
     padding-block-start: 130px;
+    height: 600px;
 }
 
 .bundles_section_background {
@@ -888,7 +896,8 @@ body {
     height: 100%;
     z-index: -1;
     position: absolute;
-    object-fit: cover;
+    object-fit: none;
+    top: 40px;
 }
 
 /* .bundles_section::before {
@@ -958,14 +967,20 @@ body {
 
 .footer {
     min-height: 400px;
-    background-image: url(../images/footer.png);
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: auto;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     position: relative;
+    margin-bottom: 60px;
+}
+
+.footer_background {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    object-fit: cover;
+    top: 0px;
 }
 
 .footer h3 {
@@ -1141,6 +1156,10 @@ body {
 }
 
 
+.copiryting_section
+{
+    position: relative;
+}
 
 .copiryting {
     background-color: #014663;
