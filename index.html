@@ -28,7 +28,11 @@
         <a class="menu_link" href="">About</a>
     </div>
     <div class="right_menu">
-        <button class="menu_auth_btn help_btn">Help</button>
+        <select class="menu_auth_btn help_btn" name="cyrency" id="">
+            <option value="1">US $</option>
+            <option value="2">EUR €</option>
+        </select> 
+        <button class="menu_auth_btn help_btn"> <img src="assets/images/icons/help_icon.png" alt=""> <p>Help</p> </button>
         <button class="menu_auth_btn">Sign Up</button>
         <button class="menu_auth_btn login_btn">Login</button>
     </div>
@@ -40,14 +44,44 @@
         <span></span> <span></span> <span></span>
         
         <ul id="menu" class="mobile_menu">
-            <a class="menu_link menu_link_active" href="">Home</a>
-            <a class="menu_link" href="">Stories</a>
-            <a class="menu_link" href="">Deals</a>
-            <a class="menu_link" href="">Digest</a>
-            <a class="menu_link" href="">Pricing</a>
-            <a class="menu_link" href="">About</a>
+            <a class="menu_link menu_link_active" href=""> <div class="menu_link_text">Home </div></a>
+            <a class="menu_link" href=""> 
+                <div class="menu_link_text">Stories 
+                    <div class="menu_link_text_more">
+                        <img src="assets/images/icons/arrow-point-to-bottom.png" alt="">
+                    </div>
+                </div>  
+            </a>
+            <a class="menu_link" href=""> 
+                <div class="menu_link_text"> Deals 
+                    <div class="menu_link_text_more">
+                        <img src="assets/images/icons/arrow-point-to-bottom.png" alt="">
+                    </div> 
+                </div>
+            </a>
+            <a class="menu_link" href=""> 
+                <div class="menu_link_text"> Digest 
+                    <div class="menu_link_text_more">
+                        <img src="assets/images/icons/arrow-point-to-bottom.png" alt="">
+                    </div>
+                </div> 
+            </a>
+            <a class="menu_link" href=""> 
+                <div class="menu_link_text"> Pricing  
+
+                </div>
+            </a>
+            <a class="menu_link" href=""> 
+                <div class="menu_link_text"> About 
+
+                </div> 
+            </a>
             <div class="mobile_menu_buttons">
-                <button class="menu_auth_btn help_btn">Help</button>
+                <select class="menu_auth_btn help_btn" name="cyrency" id="">
+                    <option value="1">US $</option>
+                    <option value="2">EUR €</option>
+                </select> 
+                <button class="menu_auth_btn help_btn"> <img src="assets/images/icons/help_icon.png" alt=""> <p>Help</p> </button>
                 <button class="menu_auth_btn">Sign Up</button>
                 <button class="menu_auth_btn login_btn">Login</button>
             </div>

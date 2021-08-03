@@ -238,8 +238,9 @@ body {
 }
 
 .menu_link {
-    margin: 10px;
-    padding: 10px;
+    /* margin-top: 10px; */
+    /* margin-right: 10px; */
+    padding: 10px 0px 10px 0px;
     font-size: 14px;
     text-decoration: none;
     color: #000000;
@@ -258,10 +259,10 @@ body {
 }
 
 .links {
-    width: 50%;
-display: flex;
-align-items: center;
-justify-content: center;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .menu_logo {
@@ -281,9 +282,10 @@ justify-content: center;
     background-color: transparent;
     border: 1px solid;
     border-radius: 25px;
-    padding: 6px 14px 6px 14px;
+    padding: 6px 10px 6px 10px;
     border-color: skyblue;
-    margin: 0 10px;
+    margin: 0 5px;
+    min-width: 80px;
 }
 
 .menu_auth_btn:hover {
@@ -306,6 +308,15 @@ justify-content: center;
 
 .help_btn {
     border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    max-height: 35px;
+}
+
+.help_btn img {
+    margin-right: 5px;
 }
 
 .mobile_menu {
@@ -336,8 +347,30 @@ justify-content: center;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     padding: 10px 0;
+}
+
+.mobile_menu_buttons .menu_auth_btn {
+
+    min-width: 60px;
+    font-size: 12px;
+}
+
+.menu_link_text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu_link_text_more {
+    margin: 0;
+    padding-right: 10px;
+}
+
+.menu_link_text_more img {
+    width: 12px;
+    height: 8px;
 }
 
 
@@ -346,12 +379,12 @@ justify-content: center;
     display: block;
     position: relative;
     top: 0px;
-    right: 30px;
     z-index: 1;
     -webkit-user-select: none;
     user-select: none;
     height: 20px;
     width: 30px;
+    margin-right: 20px;
  }
  
  #menuToggle a
@@ -432,8 +465,8 @@ justify-content: center;
  {
     height: 100vh;
     position: absolute;
-    width: 100vw;
-    left: 97vw;
+    width: 90vw;
+    left: 90vw;
     padding: 0;
     margin: 0;
     background: #ffffff;
@@ -467,7 +500,7 @@ justify-content: center;
         width: 10%;
     }
 
-  @media (min-width:769px) {
+  @media (min-width:992px) {
     #menuToggle {
         display: none;
     }
@@ -871,7 +904,7 @@ justify-content: center;
         bottom: 20px;
     }
     .switch_from_where_inputs {
-        left: calc(38% - 11.5px);
+        left: calc(38% - 19.5px);
     }
 
     .search_main_fin {
@@ -879,6 +912,13 @@ justify-content: center;
     }
     .serch_main_dates {
         width: 50%;
+    }
+}
+
+@media (max-width: 1340px) {
+
+    .switch_from_where_inputs {
+        left: calc(38% - 11.5px);
     }
 }
 
@@ -942,21 +982,7 @@ justify-content: center;
         flex: 19.333%;
         /* margin: 10px 3em; */
     }
-}
 
-
-@media (max-width: 768px) {
-
-    .search_main_from_where {
-        justify-content: center;
-
-    }
-    
-    .text_main h1 {
-        font-size: 2rem;
-        font-weight: 400;
-        margin: .1rem 0 .3rem 0;
-    }
 
     .links {
         display: none;
@@ -972,7 +998,23 @@ justify-content: center;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-left: 10px;
+        margin-left: 20px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .search_main_from_where {
+        justify-content: center;
+
+    }
+    
+    .text_main h1 {
+        font-size: 2rem;
+        font-weight: 400;
+        margin: .1rem 0 .3rem 0;
     }
 
     .content_main {
@@ -2011,6 +2053,11 @@ justify-content: center;
     max-width: 155px;
 }
 
+.footer_social img {
+    width: 35px;
+    height: 35px;
+}
+
 .footer_social img:hover {
     filter: invert(60%) sepia(10%) saturate(2903%) hue-rotate(41deg) brightness(91%) contrast(83%);
     cursor: pointer;
@@ -2176,6 +2223,7 @@ justify-content: center;
     .top_footer {
         flex-direction: column;
         align-items: center;
+        padding-top: 20px;
     }
 
     .logo_section {
@@ -2186,6 +2234,28 @@ justify-content: center;
     .menu_section {
         justify-content: center;
         width: 100%;
+    }
+
+    .copiryting {
+        flex-direction: column;
+        font-size: 12px;
+
+    }
+
+    .vl_copiriting {
+        border-left: 1px solid #0b719d;
+        height: 19px;
+    }
+
+    .left_copiriting {
+        width: 100%;
+    }
+
+    .right_copiriting {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
