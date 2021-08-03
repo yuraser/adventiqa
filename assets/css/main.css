@@ -1010,6 +1010,14 @@ body {
         justify-content: center;
 
     }
+    .logo {
+        height: 100%;
+        width: 35%;
+    }
+
+    .menu_logo {
+        max-width: 100%;
+    }
     
     .text_main h1 {
         font-size: 2rem;
@@ -1024,6 +1032,12 @@ body {
 
     .img_main img {
         max-width: 90vw;
+    }
+
+    .img_main {
+        top: 12vh;
+        height: auto;
+        width: 85%;
     }
 
     .buttons_main_btn {
@@ -1088,6 +1102,11 @@ body {
         min-width: 37%;
         width: 110px;
     }
+
+
+    .content_main {
+        width: 85%;
+    }
     
     .search_main_fin select {
         min-width: 37%;
@@ -1130,11 +1149,28 @@ body {
 }
 
 @media (max-width: 375px) {
+
+    .banner_section {
+        height: 140vh;
+    }
+
+    .search_main_form_date {
+        min-width: 35%;
+    }
+
     .buttons_main_btn {
-        
         flex: 33.333%;
         min-width: 33.33333%;
         min-width: 90px;
+        height: 40px;
+        font-size: 10px;
+        padding: 5px;
+        justify-content: center;
+    }
+
+    .buttons_main_btn img {
+        width: 20px;
+        height: 14px;
     }
 
     .search_main_from_where_input {
@@ -1275,6 +1311,36 @@ body {
         display: none;
     }
 }
+
+@media (max-width: 768px) {
+
+    .steps_numb1 {
+        right: 30px;
+        top: 5px;
+    }
+
+    .steps_numb2 {
+        left: 0px;
+        bottom: 5px;
+    }
+
+    .steps_numb3 {
+        right: -10px;
+        top: 5px;
+    }
+
+    .steps_numb4 {
+        left: 10px;
+        top: 5px;
+    }
+
+    .steps_numb5 {
+        left: 20px;
+        bottom: 5px;
+    }
+
+}
+
 /* ************************************************************************
 /* End of Steps section
 ************************************************************************ */
@@ -1599,6 +1665,13 @@ body {
     }
 }
 
+
+@media (max-width: 520px) {
+    .selected_top_section_slider_card {
+        transform: scale(1.4);
+    }
+}
+
 /* ************************************************************************
 /* End of Top section
 ************************************************************************ */
@@ -1687,7 +1760,9 @@ body {
 
 .popular_images {
     position: relative;
+    width: 100%;
 }
+
 
 .smal_images {
     position: absolute;
@@ -1852,14 +1927,24 @@ body {
     .secondary_popular_button {
         width: 140px;
     }
+
+    
+.popular_images img {
+    width: 100%;
+}
 }
 
 @media (max-width:520px) {
+    .secondary_popular_button {
+        margin: 0;
+    }
     .right_slider_control_btn {
         right: 1%;
+        top: 42%;
     }
     .left_slider_control_btn {
         left: 1%;
+        top: 42%;    
     }
 }
 
@@ -1956,6 +2041,14 @@ body {
     .partner {
         flex: 26.66666%;
     }
+}
+
+@media (max-width: 520px) {
+    .partner {
+        flex: 33.33333%;
+        margin: 10px;
+    }
+
 }
 
 
@@ -2229,11 +2322,17 @@ body {
     .logo_section {
         width: 100%;
         align-items: center;
+        margin: 5px 0;
     }
 
     .menu_section {
         justify-content: center;
         width: 100%;
+        margin: 5px 0;
+    }
+
+    .buttons_section {
+        margin: 5px 0;
     }
 
     .copiryting {
