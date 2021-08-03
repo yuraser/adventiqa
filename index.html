@@ -41,7 +41,7 @@
             <img src="assets/images/linebg.svg" alt="">
         </div>
     <div class="baner">
-        <div class="content_main col-md-8">
+        <div class="content_main">
 
             <div class="text_main">
                 <h1>The Ultimate Trip Planner</h1>
@@ -55,25 +55,39 @@
                             <input class="search_main_input search_main_from_where_input" placeholder="From" type="text">
                             <input class="switch_from_where_inputs" type="button">
                             <input class="search_main_input search_main_from_where_input" placeholder="Where" type="text">
+                            <button class="add_destination_btn">+ Add Destination</button>
                         </div>
 
-                        <input class="search_main_input search_main_form_date" type="date">
-                        <input class="search_main_input search_main_form_date" type="date">
-                        <select class="search_main_input" name="" id="">
-                            <option value="1">1</option>
-                        </select>
+                        <div class="serch_main_dates">
+                            <input class="search_main_input search_main_form_date" type="date">
+                            <input class="search_main_input search_main_form_date" type="date">
+                        </div>
 
-                    <button class="submit_search_main_build_trip_btn" type="submit"> <img src="assets/images/search.png" alt=""> Build Trip</button>
+                        <div class="search_main_fin">
+                            <select class="search_main_input" name="" id="">
+                                <option value="1">Travelers</option>
+                            </select>
+
+                            <button class="submit_search_main_build_trip_btn" type="submit"> 
+                                <img src="assets/images/search.png" alt=""> Build Trip
+                            </button>
+                        </div>
+
+      
+
                     
                     </div>
                     
                     <div class="search_main_details">
-                        <button class="add_destination_btn">+ Add Destination</button>
-                        <label class="search_main_label_budget" for="budget">Budget</label>
-                        <select class="search_main_curency" name="cyrency" id="">
-                            <option value="1">US $</option>
-                            <option value="2">EUR €</option>
-                        </select>
+                        
+                        <div class="budget_select">
+                           <label class="search_main_label_budget" for="budget">Budget</label>
+                            <select class="search_main_curency" name="cyrency" id="">
+                                <option value="1">US $</option>
+                                <option value="2">EUR €</option>
+                            </select> 
+                        </div>
+                        
                             <!-- 
                                 React decition:
                                 https://www.npmjs.com/package/react-input-range 
@@ -212,6 +226,35 @@
 
 
 <section class="section top_section">
+    <h2 class="section_header top_section_header"> Top Travels Video</h2>
+    <img class="top_section_background" src="assets/images/video/bg.png" alt="">
+
+    <div class="top_section_slider_cards">
+        <div class="top_section_slider_card secondary_slider_card">
+            <img src="assets/images/video/v1.png" alt="">
+        </div>
+        <div class="top_section_slider_card secondary_slider_card">
+            <img src="assets/images/video/v2.png" alt="">
+        </div>
+        <div class="top_section_slider_card selected_top_section_slider_card">
+            <img src="assets/images/video/v3.png" alt="">
+            <img class="selected_top_slider_card_youtube" src="assets/images/video/youtube.png" alt="">
+            <div class="selected_top_slider_card_title">
+                <p>Victor Malchev About Trip Europe</p> 
+            </div>
+        </div>
+        <div class="top_section_slider_card secondary_slider_card">
+            <img src="assets/images/video/v4.png" alt="">
+        </div>
+        <div class="top_section_slider_card secondary_slider_card">
+            <img src="assets/images/video/v5.png" alt="">
+        </div>
+    </div>
+
+    <div class="glide__arrows" data-glide-el="controls">
+        <button class="popular_slider_control_btn left_top_video_slider_control_btn" data-glide-dir="<"><img src="assets/images/popular_stories/arrow-point-to-right.png" alt=""></button>
+        <button class="popular_slider_control_btn right_top_video_slider_control_btn" data-glide-dir=">"><img src="assets/images/popular_stories/arrow-point-to-right.png" alt=""></button>
+    </div>
 
 </section>
 
