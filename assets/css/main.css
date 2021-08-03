@@ -309,6 +309,43 @@ justify-content: center;
 }
 
 
+.burger_menu {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 15px;
+    background: transparent;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+    color: #0b7ead;
+    font-size: 0;
+    transition: all 0.25s ease-in-out;
+  }
+  .burger_menu:before, .burger_menu:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: currentColor;
+    transform: translate(-50%, -50%);
+    transition: transform 0.25s ease-in-out;
+  }
+
+  .nav_burger_menu {
+    width: 7%;
+    }
+
+  @media (min-width:769px) {
+    .nav_burger_menu {
+        display: none;
+    }
+    .burger_menu {
+      display: none;
+    }
+  }
 
 /* ************************************************************************
 /* End of Nav section
@@ -781,6 +818,11 @@ justify-content: center;
 
 @media (max-width: 768px) {
 
+    .search_main_from_where {
+        justify-content: center;
+
+    }
+    
     .text_main h1 {
         font-size: 2rem;
         font-weight: 400;
@@ -828,7 +870,7 @@ justify-content: center;
 
     .serch_main_dates {
         width: 100%;
-    
+        justify-content: center;
     }
     
     .search_main_from_where_input {
@@ -855,19 +897,36 @@ justify-content: center;
         margin-top: -0;
         margin-left: 0;
     }
+
+
+    .search_main_fin {
+        justify-content: center;
+    }
 }
 
 @media (max-width: 520px) {
     .search_main_from_where_input {
-        min-width: 155px;
+        min-width: 35%;
     }
 
     .search_main_fin select {
-        min-width: 155px;
+        min-width: 35%;
     }
 
     .search_main_form_date {
-        max-width: 155px;
+        min-width: 35%;
+        width: 110px;
+    }
+    
+    .search_main_fin select {
+        min-width: 35%;
+        width: 145px;
+        margin: 5px;
+    }
+
+    .submit_search_main_build_trip_btn {
+        width: 145px;
+        margin: 5px;
     }
 }
 
@@ -913,6 +972,12 @@ justify-content: center;
 
     .search_main_fin select {
         min-width: 95px;
+        width: 45%;
+    }
+
+    .submit_search_main_build_trip_btn {
+        width: 45%;
+        margin: 5px;
     }
 
     .search_main_form_date {
@@ -1902,7 +1967,11 @@ justify-content: center;
 
 @media (max-width:768px) {
     .footer {
-        min-height: 100vh;
+        min-height: 55vh;
+        background: #014663;
+    }
+    .footer_background {
+        display: none;
     }
 
     .top_footer {
