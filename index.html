@@ -33,10 +33,26 @@
         <button class="menu_auth_btn login_btn">Login</button>
     </div>
 
-    <div class="nav_burger_menu">
-        <div class="burger_menu">
-        </div>
-    </div>
+    <div id="menuToggle">
+
+        <input type="checkbox" onclick="toggleOpacity()"/>
+ 
+        <span></span> <span></span> <span></span>
+        
+        <ul id="menu" class="mobile_menu">
+            <a class="menu_link menu_link_active" href="">Home</a>
+            <a class="menu_link" href="">Stories</a>
+            <a class="menu_link" href="">Deals</a>
+            <a class="menu_link" href="">Digest</a>
+            <a class="menu_link" href="">Pricing</a>
+            <a class="menu_link" href="">About</a>
+            <div class="mobile_menu_buttons">
+                <button class="menu_auth_btn help_btn">Help</button>
+                <button class="menu_auth_btn">Sign Up</button>
+                <button class="menu_auth_btn login_btn">Login</button>
+            </div>
+        </ul>
+      </div>
 
 </nav>
 
@@ -625,5 +641,17 @@
 
 <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
 <script type="javascrypt" src="assets/js/main.js"></script>
+
+<script>
+    
+function toggleOpacity() {
+  let menu = document.getElementById("menu");
+  if (menu.classList.contains("fade-in")) {
+    menu.classList.remove("fade-in");
+  } else {
+    menu.classList.add("fade-in");
+  }
+}
+</script>
 
 </html>
