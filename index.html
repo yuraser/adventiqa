@@ -7,9 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
-<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
-
+<link rel="stylesheet" href="assets/css/rSlider.css"></head>
 
 <link rel="stylesheet" href="assets/css/main.css"></head>
 
@@ -147,23 +145,7 @@
                                 https://www.npmjs.com/package/react-input-range 
                             -->
                             <div class="input-range__track input-range__track--background">
-                                <div class="input-range__track input-range__track--active" style="left: 25%; width: 75%;">
-                                </div>
-                                <span class="input-range__slider-container" style="position: absolute; left: 25%;">
-                                    <span class="input-range__label input-range__label--value">
-                                        <span class="input-range__label-container">500</span>
-                                    </span>
-                                    <div aria-valuemax="13" aria-valuemin="0" aria-valuenow="5" class="input-range__slider" draggable="false" role="slider" tabindex="0">
-                                    </div>
-                                </span>
-                                <span class="input-range__slider-container" style="position: absolute; left: 100%;">
-                                    <span class="input-range__label input-range__label--value">
-                                        <span class="input-range__label-container">4000</span>
-                                    </span>
-                                    <div aria-valuemax="20" aria-valuemin="5" aria-valuenow="13" class="input-range__slider" draggable="false" role="slider" tabindex="0">
-
-                                    </div>
-                                </span>
+                                <input type="text" id="sampleSlider" />
                             </div>
                     </div>
                 </div>  
@@ -574,7 +556,7 @@
             <img src="assets/images/partners/1.png" alt="">
         </div>
         <div class="partner">
-            <img src="assets/images/partners/2.png" alt="">
+            <img src="assets/images/partners/2cuted.png" alt="">
         </div>
         <div class="partner">
             <img src="assets/images/partners/3.png" alt="">
@@ -610,7 +592,7 @@
 
 <footer class="footer">
 
-    <div class="scroll_to_top">
+    <div class="scroll_to_top" id="scrollToTopBtn" >
         <img src="assets/images/icons/arrow-point-to-top.png" alt="">
     </div>
 
@@ -679,21 +661,9 @@
     </div>
 </div>
 
+<script  src="assets/js/rSlider.js"></script>
+<script  src="assets/js/main.js"></script>
+
 </body>
-
-<script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
-<script type="javascrypt" src="assets/js/main.js"></script>
-
-<script>
-    
-function toggleOpacity() {
-  let menu = document.getElementById("menu");
-  if (menu.classList.contains("fade-in")) {
-    menu.classList.remove("fade-in");
-  } else {
-    menu.classList.add("fade-in");
-  }
-}
-</script>
 
 </html>
