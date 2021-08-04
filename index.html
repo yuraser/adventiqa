@@ -104,8 +104,9 @@
                 <h4>Plan&Book your dream trip</h4>
             </div>
 
-            <div class="search_main">
-                <form class="search_main_form" action="">
+            
+            <form class="search_main_form" action="">
+                <div class="search_main">
                     <div class="search_main_inpusts">
                         <div class="search_main_from_where">
                             <input class="search_main_input search_main_from_where_input" placeholder="From" type="text">
@@ -142,50 +143,56 @@
                         </div>
                         
                             <!-- 
-                                React decition:
+                                React decision:
                                 https://www.npmjs.com/package/react-input-range 
                             -->
-                            <div class="min_max_rangeslider">
-                                <input class="min min_range" name="range_1" type="range" min="1" max="100" value="10" />
-                                <input class="max" name="range_1" type="range" min="1" max="100" value="90" />
-                                <span class="range_min light left">500 </span>
-                                <span class="range_max light right">4000 </span>
+                            <div class="input-range__track input-range__track--background">
+                                <div class="input-range__track input-range__track--active" style="left: 25%; width: 75%;">
+                                </div>
+                                <span class="input-range__slider-container" style="position: absolute; left: 25%;">
+                                    <span class="input-range__label input-range__label--value">
+                                        <span class="input-range__label-container">500</span>
+                                    </span>
+                                    <div aria-valuemax="13" aria-valuemin="0" aria-valuenow="5" class="input-range__slider" draggable="false" role="slider" tabindex="0">
+                                    </div>
+                                </span>
+                                <span class="input-range__slider-container" style="position: absolute; left: 100%;">
+                                    <span class="input-range__label input-range__label--value">
+                                        <span class="input-range__label-container">4000</span>
+                                    </span>
+                                    <div aria-valuemax="20" aria-valuemin="5" aria-valuenow="13" class="input-range__slider" draggable="false" role="slider" tabindex="0">
+
+                                    </div>
+                                </span>
                             </div>
                     </div>
+                </div>  
+                    <div class="buttons_main">
 
+                        <input id="radio-1" type="radio" ></input>
+                        <label for="radio-1" class="buttons_main_btn buttons_main_btn_active"><img src="assets/images/icons/ic.png" alt="">All</label>
+
+                        <input id="radio-2" type="radio"  class="buttons_main_btn"></input>
+                        <label for="radio-2" class="buttons_main_btn "><img src="assets/images/icons/ic1.png" alt="">Family </label>
+
+                        
+                        <input id="radio-3" type="radio"  class="buttons_main_btn"></input>
+                        <label for="radio-3" class="buttons_main_btn "><img src="assets/images/icons/ic2.png" alt="">Adventure</label>
+
+                        <input id="radio-4" type="radio"  class="buttons_main_btn"></input>
+                        <label for="radio-4" class="buttons_main_btn "><img src="assets/images/icons/ic3.png" alt="">Sport</label>
+
+                        <input id="radio-5" type="radio"  class="buttons_main_btn"></input>
+                        <label for="radio-5" class="buttons_main_btn "><img src="assets/images/icons/ic4.png" alt="">Luxury</label>
+
+                        <input id="radio-6" type="radio"  class="buttons_main_btn"></input>
+                        <label for="radio-6" class="buttons_main_btn "><img src="assets/images/icons/ic5.png" alt="">Art</label>
+                    </div>
 
                 </form>
+
             </div>
 
-            <div class="buttons_main">
-                <button class="buttons_main_btn buttons_main_btn_active">
-                    <img src="assets/images/icons/ic.png" alt="">
-                    All
-                </button>
-                <button  class="buttons_main_btn">
-                    <img src="assets/images/icons/ic1.png" alt="">
-                    Family
-                </button>
-                <button  class="buttons_main_btn">
-                    <img src="assets/images/icons/ic2.png" alt="">
-                    Adventure
-                </button>
-                <button  class="buttons_main_btn">
-                    <img src="assets/images/icons/ic3.png" alt="">
-                    Sport
-                </button>
-                <button  class="buttons_main_btn">
-                    <img src="assets/images/icons/ic4.png" alt="">
-                    Luxury
-                </button>
-                <button  class="buttons_main_btn">
-                    <img src="assets/images/icons/ic5.png" alt="">
-                    Art
-                </button>
-            </div>
-
-        </div>
-        
         <div class="img_main">
             <img src="assets/images/img main.png" alt="">
         </div>
@@ -602,6 +609,10 @@
 
 
 <footer class="footer">
+
+    <div class="scroll_to_top">
+        <img src="assets/images/icons/arrow-point-to-top.png" alt="">
+    </div>
 
     <img class="footer_background" src="assets//images/footer2.png" alt="">
 
